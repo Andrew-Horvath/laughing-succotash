@@ -15,13 +15,6 @@ main {
   margin-top: 10%;
 }
 
-.section-one,
-.section-two,
-.section-three {
-  height: auto;
-  margin: 25px auto;
-}
-
 .navbar {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -47,6 +40,16 @@ main {
 
 .active-custom {
   color: #00954c;
+}
+
+/* jumbotro customization */
+.jumbotron {
+  color: white;
+  background-image: url("../assets/images/4dishes-commitment@2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 /*social media icons*/
