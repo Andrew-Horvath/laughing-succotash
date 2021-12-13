@@ -1,8 +1,11 @@
 @import url("https://use.typekit.net/sif5fhl.css");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500;600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 62.5%;
 }
 
 .site-bg {
@@ -20,6 +23,30 @@ body {
   right: 0;
   position: fixed;
   z-index: -1;
+}
+
+.btn-footer, .btn-cards {
+  display: inline-block;
+  font: 700 1.5rem "mostra-nuova", "Monserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: 1px solid #00954c;
+  background: none;
+  color: #ffcf01;
+  width: 10rem;
+  border-radius: 0.25rem;
+}
+
+.btn-footer:hover, .btn-cards:hover {
+  background: #f36c21;
+  color: #ffcf01;
+  text-decoration: none;
+}
+
+.btn-cards {
+  text-align: center;
+  color: #412312;
+  padding: 0.75rem 1rem;
 }
 
 /*navigation mobile-first*/
@@ -85,24 +112,29 @@ h1 {
 
 .card {
   border: none;
+  background-color: #edebda;
 }
 
 /*social media icons*/
-.social li {
-  display: inline-block;
-  color: #fff;
-  margin: 0 5px 0 0;
+.social {
+  padding: 0;
 }
 
 .social a {
   font-size: 2rem;
   color: #edebda;
   padding: 0;
-  border: none;
+  text-decoration: none;
 }
 
 .social a:hover {
   color: #ffcf01;
+}
+
+.social li {
+  display: inline-block;
+  color: #fff;
+  margin: 0 5px 0 0;
 }
 
 /*footer customization*/
@@ -114,20 +146,43 @@ footer {
 }
 
 .footer-brand {
-  font-family: mostra-nuova, "montserrat", sans-serif;
-  font-size: 3rem;
+  font-family: "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.75rem;
   color: #00954c;
 }
 
-footer ul {
-  font-size: 13px;
-  list-style-type: none;
+.nav-footer {
+  letter-spacing: 0.1rem;
+}
+
+.nav-footer a {
+  color: #edebda;
+}
+
+.nav-footer a:hover {
+  text-decoration: none;
+  color: #00954c;
+}
+
+.nav-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-footer li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-bottom {
-  margin-top: 2em;
-  border-top: 1px solid #dddddd;
-  padding-top: 20px;
+  margin: 2rem 0 5rem 0;
+  border-top: 1px solid #edebda;
+  padding-top: 2.5rem;
   padding-bottom: 10px;
+  color: #edebda;
 }
 /*# sourceMappingURL=main.css.map */
