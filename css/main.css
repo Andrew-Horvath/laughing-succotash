@@ -25,22 +25,28 @@ body {
   z-index: -1;
 }
 
-.btn-footer, .btn-cards {
+.btn-ordering, .btn-footer, .btn-cards {
   display: inline-block;
   font: 700 1.5rem "mostra-nuova", "Monserrat", sans-serif;
   text-transform: uppercase;
   padding: 0.5rem;
-  border: 1px solid #00954c;
+  border: 2px solid #00954c;
   background: none;
   color: #ffcf01;
-  width: 10rem;
+  width: 11rem;
   border-radius: 0.25rem;
 }
 
-.btn-footer:hover, .btn-cards:hover {
+.btn-ordering:hover, .btn-footer:hover, .btn-cards:hover {
   background: #f36c21;
   color: #ffcf01;
   text-decoration: none;
+}
+
+.btn-ordering {
+  border-color: #ffcf01;
+  width: auto;
+  padding: 1rem;
 }
 
 .btn-cards {
@@ -50,10 +56,6 @@ body {
 }
 
 /*navigation mobile-first*/
-main {
-  margin-top: 10%;
-}
-
 .navbar {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -82,6 +84,18 @@ main {
 }
 
 /* jumbotro customization */
+.logo-mobile {
+  width: 75px;
+  margin: -1rem 0 0 0;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .logo-mobile {
+    width: 100px;
+  }
+}
+
 .jumbotron {
   color: white;
   background-image: url("../assets/images/fresh-tomatoes-mobile.jpg");
@@ -94,7 +108,7 @@ main {
 h1 {
   font-family: "mostra-nuova", "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #f36c21;
 }
 
