@@ -77,6 +77,10 @@ body {
   font-size: 14px;
 }
 
+.link-fix {
+  pointer-events: none;
+}
+
 .icon-size-custom {
   font-size: 30px;
 }
@@ -87,6 +91,7 @@ body {
 
 .nav-link:hover {
   color: #f36c21;
+  z-index: 1000rem;
 }
 
 .active-custom {
@@ -147,6 +152,10 @@ body {
   }
 }
 
+.jumbotron.tron-about {
+  background-image: url("../assets/images/green-peas-about-hero.jpg");
+}
+
 @media (min-width: 576px) {
   .container-cta-btn {
     margin-left: 12rem;
@@ -197,26 +206,32 @@ h1 {
   }
 }
 
+h1.about-h1 {
+  margin: 10rem 0 0 0;
+  font-size: 5rem;
+  color: #412312;
+}
+
 /* sections and cards */
-.welcome, .card {
+.welcome, .about, .card, .about-section {
   -webkit-box-shadow: 5px 5px 15px 5px #495057;
           box-shadow: 5px 5px 15px 5px #495057;
 }
 
-.welcome {
+.welcome, .about {
   background: #edebda;
   padding: 1rem 3rem 3rem 3rem;
   margin: 5rem 0 5rem 0;
 }
 
-.welcome h2 {
+.welcome h2, .about h2 {
   text-align: center;
   font: bold 4.1rem "mostra-nuova", "Montserrat", sans-serif;
   color: #7f1b19;
   margin-bottom: 1.5rem;
 }
 
-.welcome h2::before {
+.welcome h2::before, .about h2::before {
   content: "Welcome";
   text-transform: none;
   letter-spacing: 0rem;
@@ -226,13 +241,13 @@ h1 {
   margin: 0 0 -5rem -1.25rem;
 }
 
-.welcome p {
+.welcome p, .about p {
   color: #412312;
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
 }
 
-.welcome p span {
+.welcome p span, .about p span {
   color: #00954c;
 }
 
@@ -272,6 +287,62 @@ h1 {
 
 .title-card-4 {
   color: #e81e26;
+}
+
+/* about page individual sections */
+.about {
+  margin: 0;
+  min-height: 340px;
+}
+
+.about h2::before {
+  content: "About Us";
+}
+
+.about-section {
+  padding: 3rem;
+  background-color: #edebda;
+  color: #412312;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  min-height: 340px;
+}
+
+blockquote {
+  border: none;
+  font-family: "mostra-nuova", "monserrat", sans-serif;
+  letter-spacing: 0.7;
+  color: #412312;
+  margin: 8rem 0;
+}
+
+blockquote h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+blockquote h3::before {
+  content: open-quote;
+  font: 700 25rem "monserrat", sans-serif;
+  color: rgba(127, 27, 25, 0.5);
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+  z-index: -1;
+}
+
+blockquote h3::after {
+  content: close-quote;
+  font: 700 25rem "monserrat", sans-serif;
+  color: rgba(127, 27, 25, 0.5);
+  position: absolute;
+  bottom: 0rem;
+  right: -2rem;
+  z-index: -1;
+}
+
+blockquote span {
+  font: 3rem "Kaushan Script", cursive;
 }
 
 /*social media icons*/
