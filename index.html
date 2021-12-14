@@ -125,7 +125,7 @@
             <div class="p-sm-2">
               <object
                 data="assets/images/hf_logo_v2.svg"
-                class="logo-mobile"
+                class="logo-desktop"
               ></object>
             </div>
             <ul
@@ -194,98 +194,117 @@
       </header>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <div class="logo-mobile">
-            <object
-              data="assets/images/hf_logo_v2.svg"
-              class="d-sm-none"
-            ></object>
+          <div class="jumbotron-header-logo d-flex d-sm-none">
+            <div class="logo-mobile d-sm-none logo-transition">
+              <object
+                data="assets/images/hf_logo_v2.svg"
+                class="d-sm-none"
+              ></object>
+            </div>
           </div>
-          <h1 class="text-uppercase">
-            Everyday Vegetables. <br />
-            Re-Imagined.
-          </h1>
-          <button type="button" class="btn-ordering mt-2">order online</button>
+          <div class="container-cta-btn">
+            <h1 class="text-uppercase">
+              Everyday Vegetables. <br />
+              Re-Imagined.
+            </h1>
+            <button type="button" class="btn-ordering mt-2">
+              order online
+            </button>
+          </div>
         </div>
       </div>
 
       <main class="container">
-        <section class="welcome my-3">
+        <section class="welcome">
           <h2>Herbaceous Fork</h2>
           <p>
-            Welcome to Herbaceous Fork. We feature a healthy, vegetable-focused
-            menu. Most of our menu items are plant-based and high in nutrients,
-            with minimal use of dairy and proteins. We are here to showcase
-            local farmers and their vegetables in as many ways as we can
-            imagine.
+            Welcome to <span id="hf-welcome-name">Herbaceous Fork</span>. We
+            feature a healthy, vegetable-focused menu. Most of our menu items
+            are plant-based and high in nutrients, with minimal use of dairy and
+            proteins. We are here to showcase local farmers and their vegetables
+            in as many ways as we can imagine.
           </p>
         </section>
 
-        <section class="card mb-5">
-          <img
-            src="assets/images/mung-bean-pancakes-card-1.jpg"
-            class="card-img-top"
-            alt="5 small dishes of whole salts and spices"
-          />
-          <div class="card-body">
-            <h5 class="card-title">our commitment</h5>
-            <p class="card-text">
-              It is Chef Michael's ability to highlight everyday vegetables and
-              re-imagine their versatility that separates us from other
-              plant-based destinations.
-            </p>
-            <a href="#" class="btn-cards">menu</a>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/mung-bean-pancakes-card-1.jpg"
+                class="card-img-top"
+                alt="white plate with korean mung bean
+            pancakes, carrots and scallions on a wood table"
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-1">our commitment</h3>
+                <p class="card-text">
+                  It is Chef Michael's ability to highlight everyday vegetables
+                  and re-imagine their versatility that separates us from other
+                  plant-based destinations.
+                </p>
+                <a href="#" class="btn-cards">menu</a>
+              </div>
+            </section>
           </div>
-        </section>
 
-        <section class="card mb-5">
-          <img
-            src="assets/images/spices-5ramekins-card-2.jpg"
-            class="card-img-top"
-            alt="four bowls of different vegetable purees. Broccoli, squash, mushroom, red beets."
-          />
-          <div class="card-body">
-            <h5 class="card-title">stay connected</h5>
-            <p class="card-text">
-              Connect with us on social media! We are on Facebook, Twitter,
-              Instagram and LinkedIn. Direct links are at the bottom of the
-              page. We also send out a weekly email with specials and upcoming
-              events! Use the sign up button here or on our about page!!
-            </p>
-            <a href="#" class="btn-cards">sign up</a>
+          <div class="col-12 col-sm-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/spices-5ramekins-card-2.jpg"
+                class="card-img-top"
+                alt="four bowls of different vegetable purees. Broccoli, squash, mushroom, red beets."
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-2">stay connected</h3>
+                <p class="card-text">
+                  Connect with us on social media! We are on Facebook, Twitter,
+                  Instagram and LinkedIn. Direct links are at the bottom of the
+                  page. We also send out a weekly email with specials and
+                  upcoming events! Use the sign up button here or on our about
+                  page!!
+                </p>
+                <a href="#" class="btn-cards">sign up</a>
+              </div>
+            </section>
           </div>
-        </section>
 
-        <section class="card mb-5">
-          <img
-            src="assets/images/kitchen-bar-card-3.jpg"
-            class="card-img-top"
-            alt="bar and kitchen photo from perspective in the dining room"
-          />
-          <div class="card-body">
-            <h5 class="card-title">lets party</h5>
-            <p class="card-text">
-              Feel good about the food you're ordering. Don't hesitate to call
-              us for any advice. We're here to help you with your next Event!
-            </p>
-            <a href="#" class="btn-cards">contact</a>
+          <div class="col-12 col-sm-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/kitchen-bar-card-3.jpg"
+                class="card-img-top"
+                alt="bar and kitchen photo from perspective in the dining room"
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-3">lets party</h3>
+                <p class="card-text">
+                  Feel good about the food you're ordering. Don't hesitate to
+                  call us for any advice. We're here to help you with your next
+                  Event!
+                </p>
+                <a href="#" class="btn-cards">contact</a>
+              </div>
+            </section>
           </div>
-        </section>
 
-        <section class="card mb-5">
-          <img
-            src="assets/images/salmon-grilled-card-4-v2.jpg"
-            class="card-img-top"
-            alt="grilled salmon with carrot puree, roasted sweet potatoes and peppers"
-          />
-          <div class="card-body">
-            <h5 class="card-title">our vision</h5>
-            <p class="card-text">
-              We are committed to using the best available, local vegetables and
-              products. Cooking within the season is what we do best.
-            </p>
-            <a href="#" class="btn-cards">about</a>
+          <div class="col-12 col-sm-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/salmon-grilled-card-4-v2.jpg"
+                class="card-img-top"
+                alt="grilled salmon with carrot puree, roasted sweet potatoes and peppers"
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-4">our vision</h3>
+                <p class="card-text">
+                  We are committed to using the best available, local vegetables
+                  and products. Cooking within the season is what we do best.
+                </p>
+                <a href="#" class="btn-cards">about</a>
+              </div>
+            </section>
           </div>
-        </section>
+        </div>
       </main>
 
       <footer class="d-sm-block">
@@ -294,7 +313,7 @@
             <div class="col-12 col-sm-4">
               <h4 class="footer-brand">Herbaceous Fork</h4>
             </div>
-            <div class="col-12 col-">
+            <div class="col-12 col-sm-4">
               <ul class="social">
                 <li class="facebook">
                   <a
@@ -329,6 +348,21 @@
                   >
                 </li>
               </ul>
+              <p>
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  7777 MAIN ST NW</a
+                >
+              </p>
+              <p><a href="tel:6127777777">612.777.7777</a></p>
+              <p>
+                <a href="mailto:email@herbaceousfork.com"
+                  >email@herbaceousfork.com</a
+                >
+              </p>
             </div>
             <!--social media-->
 

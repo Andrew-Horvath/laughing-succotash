@@ -15,21 +15,21 @@ body {
 
 .site-bg::after {
   content: "";
-  background: url("../assets/images/gray-brick-bg.jpg");
-  opacity: 0.5;
+  background: url("../assets/images/brick-bg-sm.jpg");
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: fixed;
-  z-index: -1;
+  z-index: -100;
 }
 
 .btn-ordering, .btn-footer, .btn-cards {
   display: inline-block;
-  font: 700 1.5rem "mostra-nuova", "Monserrat", sans-serif;
+  font: 700 1.6rem "mostra-nuova", "Monserrat", sans-serif;
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 2px solid #00954c;
   background: none;
   color: #ffcf01;
@@ -49,10 +49,16 @@ body {
   padding: 1rem;
 }
 
+.btn-footer {
+  font-size: 1.7rem;
+  width: 12rem;
+}
+
 .btn-cards {
   text-align: center;
   color: #412312;
   padding: 0.75rem 1rem;
+  margin-top: 1rem;
 }
 
 /*navigation mobile-first*/
@@ -61,6 +67,10 @@ body {
   font-weight: 500;
   background: #edebda;
   border-top: 1px solid #412312;
+}
+
+.logo-desktop {
+  width: 100px;
 }
 
 .nav-text-custom {
@@ -84,25 +94,81 @@ body {
 }
 
 /* jumbotro customization */
-.logo-mobile {
+.logo-desktop, .logo-mobile {
   width: 75px;
-  margin: -1rem 0 0 0;
   padding: 0;
+  margin: 0;
 }
 
-@media (min-width: 576px) {
-  .logo-mobile {
-    width: 100px;
-  }
+.logo-mobile {
+  margin: -1rem 0 0 0;
+}
+
+.jumbotron-header-logo {
+  z-index: 1000;
+  height: 100px;
+  width: 100%;
+  padding: 18px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.tron-logo-active {
+  position: fixed;
+  background: #edebda;
+  top: 0;
+  left: 0;
+}
+
+.logo-move {
+  position: absolute;
+  -webkit-transform: translate(calc((100vw / 2) - 5.5rem), 0);
+          transform: translate(calc((100vw / 2) - 5.5rem), 0);
+}
+
+.logo-transition {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .jumbotron {
-  color: white;
+  color: #edebda;
   background-image: url("../assets/images/fresh-tomatoes-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  max-height: 600px;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    background-image: url("../assets/images/vegetables-hero-desktop.jpg");
+    margin: 10rem 0 0 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-cta-btn {
+    margin-left: 12rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-cta-btn {
+    margin-left: 21rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-cta-btn {
+    margin-left: 33rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-cta-btn {
+    margin-left: 42rem;
+  }
 }
 
 h1 {
@@ -112,16 +178,62 @@ h1 {
   color: #f36c21;
 }
 
+@media (min-width: 576px) {
+  h1 {
+    margin-top: 10rem;
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
 /* sections and cards */
+.welcome, .card {
+  -webkit-box-shadow: 5px 5px 15px 5px #495057;
+          box-shadow: 5px 5px 15px 5px #495057;
+}
+
 .welcome {
   background: #edebda;
-  padding: 1.5rem;
+  padding: 1rem 3rem 3rem 3rem;
+  margin: 5rem 0 5rem 0;
 }
 
 .welcome h2 {
   text-align: center;
-  font: bold 2rem "mostra-nuova", "Montserrat", sans-serif;
-  color: green;
+  font: bold 4.1rem "mostra-nuova", "Montserrat", sans-serif;
+  color: #7f1b19;
+  margin-bottom: 1.5rem;
+}
+
+.welcome h2::before {
+  content: "Welcome";
+  text-transform: none;
+  letter-spacing: 0rem;
+  display: block;
+  color: rgba(0, 149, 76, 0.15);
+  font: 400 7rem "Kaushan Script", cursive;
+  margin: 0 0 -5rem -1.25rem;
+}
+
+.welcome p {
+  color: #412312;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.welcome p span {
+  color: #00954c;
 }
 
 .card {
@@ -129,13 +241,47 @@ h1 {
   background-color: #edebda;
 }
 
+.card-body {
+  padding: 2rem;
+}
+
+.card-body h3 {
+  font: 400 2.5rem "mostra-nuova", "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.card-body p {
+  font: 500 1.6rem "montserrat", sans-serif;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  color: #412312;
+}
+
+.title-card-1 {
+  color: #00954c;
+}
+
+.title-card-2 {
+  color: #7f1b19;
+}
+
+.title-card-3 {
+  color: #f36c21;
+}
+
+.title-card-4 {
+  color: #e81e26;
+}
+
 /*social media icons*/
 .social {
   padding: 0;
+  margin-top: 0.5rem;
 }
 
 .social a {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #edebda;
   padding: 0;
   text-decoration: none;
@@ -147,36 +293,42 @@ h1 {
 
 .social li {
   display: inline-block;
-  color: #fff;
+  color: #edebda;
   margin: 0 5px 0 0;
 }
 
 /*footer customization*/
 footer {
-  background: #412413;
+  background: #412312;
   height: auto;
   padding: 10px 0 30px 0;
   width: 100%;
 }
 
+footer p {
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  color: #edebda;
+}
+
+footer a {
+  color: #edebda;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #00954c;
+}
+
 .footer-brand {
   font-family: "mostra-nuova", "montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 2.75rem;
+  font-size: 3.5rem;
   color: #00954c;
 }
 
 .nav-footer {
   letter-spacing: 0.1rem;
-}
-
-.nav-footer a {
-  color: #edebda;
-}
-
-.nav-footer a:hover {
-  text-decoration: none;
-  color: #00954c;
 }
 
 .nav-footer ul {
@@ -187,7 +339,7 @@ footer {
 .nav-footer li {
   display: block;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
