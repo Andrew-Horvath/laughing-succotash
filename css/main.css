@@ -45,8 +45,19 @@ body {
 
 .btn-ordering {
   border-color: #ffcf01;
-  width: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 1rem;
+}
+
+.btn-ordering.order-menu-pg {
+  border-color: #7f1b19;
+  color: #412312;
+}
+
+.btn-ordering.order-menu-pg:hover {
+  color: #ffcf01;
 }
 
 .btn-footer {
@@ -77,10 +88,6 @@ body {
   font-size: 14px;
 }
 
-.link-fix {
-  pointer-events: none;
-}
-
 .icon-size-custom {
   font-size: 30px;
 }
@@ -92,6 +99,10 @@ body {
 .nav-link:hover {
   color: #f36c21;
   z-index: 1000rem;
+}
+
+.svg-link-fix {
+  pointer-events: none;
 }
 
 .active-custom {
@@ -132,8 +143,8 @@ body {
 }
 
 .logo-transition {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .jumbotron {
@@ -154,6 +165,10 @@ body {
 
 .jumbotron.tron-about {
   background-image: url("../assets/images/green-peas-about-hero.jpg");
+}
+
+.jumbotron.tron-menu {
+  background-image: url("../assets/images/krinkled-paper-bg-menu-pg.jpg");
 }
 
 @media (min-width: 576px) {
@@ -212,26 +227,31 @@ h1.about-h1 {
   color: #412312;
 }
 
+h1.menu-h1 {
+  margin: 0;
+  color: #7f1b19;
+}
+
 /* sections and cards */
-.welcome, .about, .card, .about-section {
+.welcome, .about, .food-menu, .card, .about-section {
   -webkit-box-shadow: 5px 5px 15px 5px #495057;
           box-shadow: 5px 5px 15px 5px #495057;
 }
 
-.welcome, .about {
+.welcome, .about, .food-menu {
   background: #edebda;
   padding: 1rem 3rem 3rem 3rem;
   margin: 5rem 0 5rem 0;
 }
 
-.welcome h2, .about h2 {
+.welcome h2, .about h2, .food-menu h2 {
   text-align: center;
   font: bold 4.1rem "mostra-nuova", "Montserrat", sans-serif;
   color: #7f1b19;
   margin-bottom: 1.5rem;
 }
 
-.welcome h2::before, .about h2::before {
+.welcome h2::before, .about h2::before, .food-menu h2::before {
   content: "Welcome";
   text-transform: none;
   letter-spacing: 0rem;
@@ -241,13 +261,13 @@ h1.about-h1 {
   margin: 0 0 -5rem -1.25rem;
 }
 
-.welcome p, .about p {
+.welcome p, .about p, .food-menu p {
   color: #412312;
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
 }
 
-.welcome p span, .about p span {
+.welcome p span, .about p span, .food-menu p span {
   color: #00954c;
 }
 
@@ -343,6 +363,43 @@ blockquote h3::after {
 
 blockquote span {
   font: 3rem "Kaushan Script", cursive;
+}
+
+/*menu page formatting*/
+.break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
+.food-menu {
+  max-width: 35rem;
+}
+
+.food-menu h2::before {
+  content: "Our Food";
+}
+
+.food-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+  color: #f36c21;
+}
+
+.food-menu ul li {
+  margin: 0 0 1rem 2rem;
+}
+
+.beet-accent {
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .beet-accent {
+    margin-top: -3rem;
+  }
 }
 
 /*social media icons*/
