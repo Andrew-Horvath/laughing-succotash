@@ -98,7 +98,7 @@ body {
 
 .nav-link:hover {
   color: #f36c21;
-  z-index: 1000rem;
+  z-index: 1000;
 }
 
 .svg-link-fix {
@@ -254,7 +254,7 @@ h1.menu-h1 {
 .welcome h2::before, .about h2::before, .food-menu h2::before {
   content: "Welcome";
   text-transform: none;
-  letter-spacing: 0rem;
+  letter-spacing: 0.1rem;
   display: block;
   color: rgba(0, 149, 76, 0.15);
   font: 400 7rem "Kaushan Script", cursive;
@@ -331,7 +331,7 @@ h1.menu-h1 {
 blockquote {
   border: none;
   font-family: "mostra-nuova", "monserrat", sans-serif;
-  letter-spacing: 0.7;
+  letter-spacing: 0.7rem;
   color: #412312;
   margin: 8rem 0;
 }

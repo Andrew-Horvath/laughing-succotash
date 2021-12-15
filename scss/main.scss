@@ -110,7 +110,7 @@ body {
   color: $hf-brown-dark;
   &:hover {
     color: $hf-orange;
-    z-index: 1000rem;
+    z-index: 1000;
   }
 }
 
@@ -242,7 +242,7 @@ h1 {
     &::before {
       content: "Welcome";
       text-transform: none;
-      letter-spacing: 0rem;
+      letter-spacing: 0.1rem;
       display: block;
       color: rgba(0, 149, 76, 0.15);
       font: 400 7rem "Kaushan Script", cursive;
@@ -322,7 +322,7 @@ h1 {
 blockquote {
   border: none;
   font-family: "mostra-nuova", "monserrat", sans-serif;
-  letter-spacing: 0.7;
+  letter-spacing: 0.7rem;
   color: $hf-brown-dark;
   margin: 8rem 0;
 
