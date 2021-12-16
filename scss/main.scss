@@ -386,6 +386,59 @@ blockquote {
   }
 }
 
+/*menu item hover overlay formatting*/
+.image-container {
+  position: relative;
+  // width: 50%;
+}
+
+.image-menu-item {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $hf-ivory;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.menu-item-description {
+  color: $hf-brown-dark;
+  opacity: 1;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-40%, -50%);
+  text-align: left;
+  .item-title {
+    font: 700 3rem "mostra-nuova", "montserrat", sans-serif;
+    text-transform: uppercase;
+    color: $hf-green-grass;
+  }
+
+  .item-modifier {
+    letter-spacing: 0.3rem;
+    color: $hf-orange;
+  }
+}
+
 /*social media icons*/
 .social {
   padding: 0;
