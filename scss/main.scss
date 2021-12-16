@@ -387,6 +387,11 @@ blockquote {
 }
 
 /*menu item hover overlay formatting*/
+
+.menu-item-container {
+  margin-bottom: 12rem;
+}
+
 .image-container {
   position: relative;
   // width: 50%;
@@ -419,7 +424,7 @@ blockquote {
   color: $hf-brown-dark;
   opacity: 1;
   font-size: 1.8rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -427,16 +432,31 @@ blockquote {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-40%, -50%);
   text-align: left;
+
+  // @include media-breakpoint-up(md) {
+  //   font-size: 1.6rem;
+  // }
   .item-title {
-    font: 700 3rem "mostra-nuova", "montserrat", sans-serif;
+    font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
     text-transform: uppercase;
     color: $hf-green-grass;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.2rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+    }
   }
 
   .item-modifier {
     letter-spacing: 0.3rem;
     color: $hf-orange;
   }
+}
+
+.divider-section {
+  max-width: 650px;
 }
 
 /*social media icons*/

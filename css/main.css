@@ -403,6 +403,10 @@ blockquote span {
 }
 
 /*menu item hover overlay formatting*/
+.menu-item-container {
+  margin-bottom: 12rem;
+}
+
 .image-container {
   position: relative;
 }
@@ -435,7 +439,7 @@ blockquote span {
   color: #412312;
   opacity: 1;
   font-size: 1.8rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -445,14 +449,30 @@ blockquote span {
 }
 
 .menu-item-description .item-title {
-  font: 700 3rem "mostra-nuova", "montserrat", sans-serif;
+  font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
   text-transform: uppercase;
   color: #00954c;
+}
+
+@media (min-width: 768px) {
+  .menu-item-description .item-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-item-description .item-title {
+    font-size: 3rem;
+  }
 }
 
 .menu-item-description .item-modifier {
   letter-spacing: 0.3rem;
   color: #f36c21;
+}
+
+.divider-section {
+  max-width: 650px;
 }
 
 /*social media icons*/
