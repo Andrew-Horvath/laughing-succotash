@@ -322,7 +322,7 @@ h1 {
 blockquote {
   border: none;
   font-family: "mostra-nuova", "monserrat", sans-serif;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.1rem;
   color: $hf-brown-dark;
   margin: 8rem 0;
 
@@ -343,8 +343,8 @@ blockquote {
       font: 700 25rem "monserrat", sans-serif;
       color: rgba(127, 27, 25, 0.5);
       position: absolute;
-      bottom: 0rem;
-      right: -2rem;
+      bottom: -2rem;
+      right: 0rem;
       z-index: -1;
     }
   }
