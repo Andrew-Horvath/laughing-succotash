@@ -386,9 +386,7 @@ blockquote {
   }
 }
 
-<<<<<<< HEAD
 /*menu item hover overlay formatting*/
-
 .menu-item-container {
   margin-bottom: 12rem;
 }
@@ -433,10 +431,6 @@ blockquote {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-40%, -50%);
   text-align: left;
-
-  // @include media-breakpoint-up(md) {
-  //   font-size: 1.6rem;
-  // }
   .item-title {
     font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
     text-transform: uppercase;
@@ -460,8 +454,40 @@ blockquote {
   max-width: 650px;
 }
 
-=======
->>>>>>> parent of 1ebf4c3 (set up menu item cards and hover overlay to show item description.)
+.second-food-menu {
+  margin: 5rem 0 0rem 0;
+  font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+
+  h3 {
+    // font: 700 3rem "mostra-nuova", "montserrat", sans-serif;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $hf-orange;
+    width: fit-content;
+    border-bottom: 3px solid $hf-green-kelly;
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 3rem 0;
+      color: $hf-crimson;
+      p {
+        font: 600 2rem "montserrat", sans-serif;
+        color: $hf-brown-dark;
+        letter-spacing: 0.15rem;
+        text-transform: none;
+      }
+    }
+  }
+}
+
 /*social media icons*/
 .social {
   padding: 0;
