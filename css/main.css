@@ -1,5 +1,116 @@
 @import url("https://use.typekit.net/sif5fhl.css");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500;600&display=swap");
+/* Modal formatting */
+.btn-modal:focus, .btn-cards-modal:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-modal-form {
+  border: 2px solid #ffcf01;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.btn-modal-form:hover {
+  background-color: #00954c;
+}
+
+.close {
+  font-size: 5rem;
+  color: #e81e26;
+}
+
+.close:hover {
+  color: #00954c;
+}
+
+.modal-dialog {
+  max-width: 775px;
+  margin-top: 10rem;
+}
+
+.modal-backdrop {
+  background-color: #412312;
+}
+
+.modal-backdrop.show {
+  opacity: 0.95;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-header h5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.modal-content {
+  background: none;
+  border: none;
+}
+
+.modal-title {
+  font: 700 4rem "montserrat", sans-serif;
+  color: #ffcf01;
+  text-transform: uppercase;
+}
+
+form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+label {
+  visibility: hidden;
+  position: absolute;
+}
+
+input {
+  width: 100%;
+  padding: 2rem;
+  border: rgba(237, 235, 218, 0.75) 3px solid;
+  margin: 1.25rem 0;
+  background: none;
+  color: #f36c21;
+  font: 500 1.8rem "montserrat", sans-serif;
+}
+
+::-webkit-input-placeholder {
+  font: 400 1.8rem "monserrat", sans-serif;
+  text-transform: uppercase;
+  color: #edebda;
+}
+
+:-ms-input-placeholder {
+  font: 400 1.8rem "monserrat", sans-serif;
+  text-transform: uppercase;
+  color: #edebda;
+}
+
+::-ms-input-placeholder {
+  font: 400 1.8rem "monserrat", sans-serif;
+  text-transform: uppercase;
+  color: #edebda;
+}
+
+::placeholder {
+  font: 400 1.8rem "monserrat", sans-serif;
+  text-transform: uppercase;
+  color: #edebda;
+}
+
+input:focus {
+  outline: #f36c21;
+  border-color: #f36c21;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -16,7 +127,7 @@ body {
 .site-bg::after {
   content: "";
   background: url("../assets/images/brick-bg-sm.jpg");
-  opacity: 0.4;
+  opacity: 0.25;
   top: 0;
   left: 0;
   bottom: 0;
@@ -25,7 +136,7 @@ body {
   z-index: -100;
 }
 
-.btn-ordering, .btn-footer, .btn-cards {
+.btn-modal, .btn-cards-modal, .btn-modal-form, .btn-ordering, .btn-footer, .btn-cards {
   display: inline-block;
   font: 700 1.6rem "mostra-nuova", "Monserrat", sans-serif;
   text-transform: uppercase;
@@ -37,7 +148,7 @@ body {
   border-radius: 0.25rem;
 }
 
-.btn-ordering:hover, .btn-footer:hover, .btn-cards:hover {
+.btn-modal:hover, .btn-cards-modal:hover, .btn-modal-form:hover, .btn-ordering:hover, .btn-footer:hover, .btn-cards:hover {
   background: #f36c21;
   color: #ffcf01;
   text-decoration: none;
@@ -70,6 +181,10 @@ body {
   color: #412312;
   padding: 0.75rem 1rem;
   margin-top: 1rem;
+}
+
+.btn-cards-modal {
+  color: #412312;
 }
 
 /*navigation mobile-first*/
@@ -242,6 +357,7 @@ h1.menu-h1 {
   background: #edebda;
   padding: 1rem 3rem 3rem 3rem;
   margin: 5rem 0 5rem 0;
+  border-radius: 0.5rem;
 }
 
 .welcome h2, .about h2, .food-menu h2 {

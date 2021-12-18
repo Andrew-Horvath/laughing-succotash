@@ -16,6 +16,8 @@ $hf-green-lime: rgba(150, 191, 61, 1);
 $hf-green-kelly: rgba(59, 181, 74, 1);
 $hf-green-grass: rgba(0, 149, 76, 1);
 
+@import "modal-form";
+
 html {
   font-size: 62.5%;
 }
@@ -30,7 +32,7 @@ body {
   &::after {
     content: "";
     background: url("../assets/images/brick-bg-sm.jpg");
-    opacity: 0.4;
+    opacity: 0.25;
     top: 0;
     left: 0;
     bottom: 0;
@@ -39,6 +41,7 @@ body {
     z-index: -100;
   }
 }
+
 %button-default {
   display: inline-block;
   font: 700 1.6rem "mostra-nuova", "Monserrat", sans-serif;
@@ -82,6 +85,11 @@ body {
   color: $hf-brown-dark;
   padding: 0.75rem 1rem;
   margin-top: 1rem;
+}
+
+.btn-cards-modal {
+  @extend .btn-modal;
+  color: $hf-brown-dark;
 }
 
 /*navigation mobile-first*/
@@ -232,6 +240,7 @@ h1 {
   background: $hf-ivory;
   padding: 1rem 3rem 3rem 3rem;
   margin: 5rem 0 5rem 0;
+  border-radius: 0.5rem;
   @extend %card-box-shadow;
 
   h2 {
@@ -460,7 +469,6 @@ blockquote {
   text-transform: uppercase;
 
   h3 {
-    // font: 700 3rem "mostra-nuova", "montserrat", sans-serif;
     margin: 0 auto;
     font-size: 3rem;
     font-weight: 700;

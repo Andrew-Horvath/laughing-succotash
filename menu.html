@@ -190,13 +190,17 @@
               </button>
             </div>
             <div class="beet-accent col-6">
-              <img class="img-fluid" src="assets/images/beet-v2.png" />
+              <img
+                class="img-fluid"
+                src="assets/images/beet-v2.png"
+                alt="cut out of red beet, red and green leafy tops"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <main class="container">
+      <main class="container mb-5">
         <section class="food-menu mx-auto">
           <h2>Menu</h2>
           <ul>
@@ -209,7 +213,7 @@
         </section>
         <div class="row justify-content-center menu-item-container">
           <div class="col-12 col-md-6 mb-5">
-            <section class="card h-100">
+            <div class="card h-100">
               <div class="image-container">
                 <img
                   src="assets/images/food-menu-items/avocado-toast-menu-item.jpg"
@@ -228,11 +232,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 mb-5">
-            <section class="card h-100">
+            <div class="card h-100">
               <div class="image-container">
                 <img
                   src="assets/images/food-menu-items/bury-beets-salad-menu-item.jpg"
@@ -252,11 +256,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 mb-5">
-            <section class="card h-100">
+            <div class="card h-100">
               <div class="image-container">
                 <img
                   src="assets/images/food-menu-items/salmon-grilled-menu-item.jpg"
@@ -274,11 +278,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 mb-5">
-            <section class="card h-100">
+            <div class="card h-100">
               <div class="image-container">
                 <img
                   src="assets/images/food-menu-items/mushroom-burger-menu-item.jpg"
@@ -297,11 +301,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 mb-5">
-            <section class="card h-100">
+            <div class="card h-100">
               <div class="image-container">
                 <img
                   src="assets/images/food-menu-items/grain-bowl-menu-item.jpg.jpg"
@@ -320,11 +324,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 mb-5">
-            <section class="card h-100">
+            <div class="card h-100">
               <div class="image-container">
                 <img
                   src="assets/images/food-menu-items/mung-bean-pancake-menu-item.jpg"
@@ -344,11 +348,58 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="divider-section m-auto">
-          <img class="img-fluid" src="assets/images/page-section-divider.png" />
+          <img
+            class="img-fluid"
+            src="assets/images/page-section-divider.png"
+            alt="decorative black cursive like flourish"
+          />
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 second-food-menu">
+            <section class="text-center text-sm-left">
+              <h3>Add On</h3>
+              <ul>
+                <li>grilled salmon</li>
+                <li>grilled chicken breast</li>
+                <li>Herbivorous Butcher Smokey Ribs</li>
+                <li>Herbivorous Butcher Grilled Ribeye</li>
+                <li>
+                  Fork Slaw
+                  <p>
+                    Napa Cabbage, Sesame Soy Vinaigrette, Carrots, Cucumber,
+                    Sesame Seeds, Cilantro
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-12 col-sm-6 second-food-menu">
+            <section class="text-center text-sm-left">
+              <h3>beverages</h3>
+              <ul>
+                <li>sparkling water</li>
+                <li>spring water</li>
+                <li>
+                  Herbaceous Fork Cold-Pressed Juices
+                  <p class="mb-4">Carrot, Ginger, Pineapple</p>
+                  <p class="mb-4">
+                    Wheatgrass, Green Apple, Cucumber, Lemon, Cayenne
+                  </p>
+                  <p class="mb-4">Beets, Green Apple, Cucumber, Lemon</p>
+                </li>
+                <li>
+                  Northstar Kombucha
+                  <p>Citra Hop, Lavendar Ginger Cherry Elderberry</p>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
       </main>
 
@@ -415,10 +466,12 @@
               <div class="row justify-content-start">
                 <div class="col-4 col-sm-6">
                   <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a class="active-custom" href="#">menu</a></li>
+                    <li>
+                      <a href="mailto:info@herbaceousfork.com">contact</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-4 col-sm-6">
@@ -426,7 +479,14 @@
                     <li><a href="#">Nutritional Information</a></li>
                     <li><a href="#">Careers</a></li>
                   </ul>
-                  <button type="button" class="btn-footer">sign up</button>
+                  <button
+                    type="button"
+                    class="btn-modal"
+                    data-toggle="modal"
+                    data-target="#signUpModal"
+                  >
+                    sign up
+                  </button>
                 </div>
               </div>
             </nav>
@@ -443,6 +503,69 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="sign-up-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-up-modal">Join our email list</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div>
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="user-email">Email Address</label>
+                <input
+                  type="text"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="mt-3">
+                <button type="button" class="btn-modal-form mr-5">
+                  Submit
+                </button>
+                <button
+                  type="button"
+                  class="btn-modal-form"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
